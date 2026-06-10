@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA5F08A3-D189-438F-BF7D-762D4BDDA694}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RACITELCOM_CS_APP</RootNamespace>
+    <AssemblyName>RACITELCOM_CS_APP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>racitelcom_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.10.9\lib\net452\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAccounting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccounting.Designer.cs">
+      <DependentUpon>frmAccounting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccountingPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccountingPortal.Designer.cs">
+      <DependentUpon>frmAccountingPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppForm1.Designer.cs">
+      <DependentUpon>frmAppForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppForm.Designer.cs">
+      <DependentUpon>frmAppForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppForm1View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppForm1View.Designer.cs">
+      <DependentUpon>frmAppForm1View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppForm2.Designer.cs">
+      <DependentUpon>frmAppForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppForm3.Designer.cs">
+      <DependentUpon>frmAppForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppFormView.Designer.cs">
+      <DependentUpon>frmAppFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBillingHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBillingHistory.Designer.cs">
+      <DependentUpon>frmBillingHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateUser.Designer.cs">
+      <DependentUpon>frmCreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCS.Designer.cs">
+      <DependentUpon>frmCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCSPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCSPortal.Designer.cs">
+      <DependentUpon>frmCSPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerInfo.Designer.cs">
+      <DependentUpon>frmCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerInfo1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerInfo1.Designer.cs">
+      <DependentUpon>frmCustomerInfo1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustTicket.Designer.cs">
+      <DependentUpon>frmCustTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteUser.Designer.cs">
+      <DependentUpon>frmDeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExistingAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExistingAccount.Designer.cs">
+      <DependentUpon>frmExistingAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFinalBilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFinalBilling.Designer.cs">
+      <DependentUpon>frmFinalBilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventory.Designer.cs">
+      <DependentUpon>frmInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLinemanTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLinemanTicket.Designer.cs">
+      <DependentUpon>frmLinemanTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogs.Designer.cs">
+      <DependentUpon>frmLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageUser.Designer.cs">
+      <DependentUpon>frmManageUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentForm.Designer.cs">
+      <DependentUpon>frmPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPendingTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPendingTicket.Designer.cs">
+      <DependentUpon>frmPendingTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRequestAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRequestAdmin.Designer.cs">
+      <DependentUpon>frmRequestAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRequest.Designer.cs">
+      <DependentUpon>frmRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRequisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRequisition.Designer.cs">
+      <DependentUpon>frmRequisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceOrder.Designer.cs">
+      <DependentUpon>frmServiceOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTechnical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTechnical.Designer.cs">
+      <DependentUpon>frmTechnical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTechnicalPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTechnicalPortal.Designer.cs">
+      <DependentUpon>frmTechnicalPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketForm.Designer.cs">
+      <DependentUpon>frmTicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateUser.Designer.cs">
+      <DependentUpon>frmUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertLogs.cs" />
+    <Compile Include="LogPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogPanel.Designer.cs">
+      <DependentUpon>LogPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyConnectionString.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RequestPanel.Designer.cs">
+      <DependentUpon>RequestPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCPClient.cs" />
+    <Compile Include="userTicketList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userTicketList.Designer.cs">
+      <DependentUpon>userTicketList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userTicketNote.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userTicketNote.Designer.cs">
+      <DependentUpon>userTicketNote.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAccounting.resx">
+      <DependentUpon>frmAccounting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccountingPortal.resx">
+      <DependentUpon>frmAccountingPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAppForm1.resx">
+      <DependentUpon>frmAppForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAppForm.resx">
+      <DependentUpon>frmAppForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAppForm1View.resx">
+      <DependentUpon>frmAppForm1View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAppForm2.resx">
+      <DependentUpon>frmAppForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAppForm3.resx">
+      <DependentUpon>frmAppForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAppFormView.resx">
+      <DependentUpon>frmAppFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBillingHistory.resx">
+      <DependentUpon>frmBillingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateUser.resx">
+      <DependentUpon>frmCreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCS.resx">
+      <DependentUpon>frmCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCSPortal.resx">
+      <DependentUpon>frmCSPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerInfo.resx">
+      <DependentUpon>frmCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerInfo1.resx">
+      <DependentUpon>frmCustomerInfo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustTicket.resx">
+      <DependentUpon>frmCustTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteUser.resx">
+      <DependentUpon>frmDeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExistingAccount.resx">
+      <DependentUpon>frmExistingAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFinalBilling.resx">
+      <DependentUpon>frmFinalBilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventory.resx">
+      <DependentUpon>frmInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLinemanTicket.resx">
+      <DependentUpon>frmLinemanTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogs.resx">
+      <DependentUpon>frmLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageUser.resx">
+      <DependentUpon>frmManageUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentForm.resx">
+      <DependentUpon>frmPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPendingTicket.resx">
+      <DependentUpon>frmPendingTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRequestAdmin.resx">
+      <DependentUpon>frmRequestAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRequest.resx">
+      <DependentUpon>frmRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRequisition.resx">
+      <DependentUpon>frmRequisition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceOrder.resx">
+      <DependentUpon>frmServiceOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTechnical.resx">
+      <DependentUpon>frmTechnical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTechnicalPortal.resx">
+      <DependentUpon>frmTechnicalPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTicketForm.resx">
+      <DependentUpon>frmTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateUser.resx">
+      <DependentUpon>frmUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogPanel.resx">
+      <DependentUpon>LogPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RequestPanel.resx">
+      <DependentUpon>RequestPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userTicketList.resx">
+      <DependentUpon>userTicketList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userTicketNote.resx">
+      <DependentUpon>userTicketNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racitelcom_logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racitelcom_logo11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racitelcom_logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="racitelcom_icon.ico" />
+    <None Include="Resources\human_logo2.png" />
+    <None Include="Resources\human_logo1.png" />
+    <None Include="Resources\check_logo.png" />
+    <None Include="Resources\cancel_logo1.png" />
+    <None Include="Resources\reset_logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
